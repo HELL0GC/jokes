@@ -9,7 +9,6 @@
   body{
     position: fixed;
     margin: 0px;
-    overflow:scroll;
     background:violet;
     width:100vw;
     height:100vh;
@@ -20,9 +19,9 @@
       background-size:cover;
       border-top:5px solid red;
     }
-    div{
+    #div{
       width:100vw;
-      height:50vh;
+      height:100vh;
       overflow:scroll;
       background:green;
     }
@@ -30,16 +29,17 @@
 </head>
 
 <body>
-<div></div>
+<div id="div"></div>
 </body>
 <script>
 let f=1;
 let k=20
+  var div=document.getElementById("div");
 for(f;f<k;f++){
   var x=document.createElement('img');
   x.setAttribute('class','xo');
   x.src=f+'.jpg';
-  document.body.appendChild(x);
+  div.appendChild(x);
 }
 </script>
 </html>
