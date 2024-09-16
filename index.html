@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  body{
+    position: fixed;
+    margin: 0px;
+    overflow: scroll;
+    background:violet;
+  }
+    .xo{
+      width:100vw;
+      border-bottom:5px solid green;
+      background-size:cover;
+      border-top:5px solid red;
+    }
+    .btn{
+        width:120px;
+        height: 40px;
+       background: red;
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+<script>
+let f=1;
+let k=20
+for(f;f<k;f++){
+  var x=document.createElement('img');
+  x.setAttribute('class','xo');
+  x.src='ok'+f+'.jpg';
+  document.body.appendChild(x);
+  
+}
+  var b=document.createElement('button');
+b.setAttribute('class','btn');
+b.innerHTML='hiiiiii';
+//bt.onclick=()=>{
+</script>
+</html>
