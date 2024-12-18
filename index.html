@@ -7,73 +7,99 @@
   <title></title>
   <style>
   body{
-    position: fixed;
     margin: 0px;
-    background:;
-    width:100vw;
-    height:100vh;
-    text-align: center;
   }
-    .xo{
-      width:100vw;
-      border-bottom:5px solid green;
-      background-size:cover;
-      border-top:5px solid red;
-      border-radius:20px;
-      margin: 10px 0px;
-    }
-    #di{
-      width:100vw;
-      height:100vh;
-      overflow:scroll;
-      background:linear-gradient(greenyellow,green);
-      margin-top:0px;;
-    }
-    h1{
-      background:;
-      color:white;
-      margin-top: 0px;
-      display:inline;
-      width:300px;;
-    }
-    .web{
-      color:black;
-      background: orange;
-      border-radius:10px;
-    }
-    .bb{
-     display: inline-block;
-      width:100vw;
-      background: black;
-      height:9vw;
-      border-radius:2vw;
-      height:12vw;
-      align-content:center;
-      
-    }
-    .jkweb{
-      width: 100vw;
-      height: 12vw;
-      background:red;
-    }
+  .top{
+    width: 100vw;
+    height:15vw;
+    background:darkblue;
+    position: fixed;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .top marquee a{
+    font-size: 10px;
+    color:cyan;
+  }
+  .xo{
+    width:100vw;
+    border: 2px solid black;
+    margin-top: 10px;
+  }
+  #di{
+    width:100vw;
+    height:92vh;
+    border:1px solid black;
+    background:darkblue;
+    position:fixed;
+    top:15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .butt{
+   width:50px;
+   height: 50px;
+   border-radius:50%;
+   border:2px solid green;
+   background: darkblue;
+   color:white;
+  }
+  
+  #con{
+    width:100vw;
+    height: 85vh;
+    background: pink;
+   overflow: scroll;
+   margin-top:1px;
+  }
   </style>
 </head>
 
 <body>
-  <div class="jkweb">
-    
-<div class="bb"><h1 class="jeeb"><span>joke </span><span class="web">WEB</span></h1>  </div></div>
-<div id="di"></div>
+  <div class="top">helloGC <marquee behavior="alternate"><a href="https://hellogc-9547c.web.app">helloGC home page</a></marquee></div>
+  
+  
+  <div id="di">
+    <div id="con">
+    </div>
+    <br>
+    <button onclick="ja(10)" class="butt">more</button>
+    </div>
 </body>
+
+
+
 <script>
-let f=1;
-let k=10
-  var joke=document.getElementById("di");
+
+f=1;
+k=15;
+
+  var joke=document.getElementById("con");
 for(f;f<k;f++){
   let x=document.createElement('img');
   x.setAttribute('class','xo');
   x.src=f+'.jpg';
  joke.appendChild(x);
 }
-</script>
+  
+  function ja(c){
+    k=k+c;
+    
+    for(f;f<k;f++){
+  let x=document.createElement('img');
+  x.setAttribute('class','xo');
+  x.src=f+'.jpg';
+ joke.appendChild(x);
+}
+  }
+ 
+ 
+ 
+ 
+ </script>
 </html>
