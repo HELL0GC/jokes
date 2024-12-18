@@ -26,7 +26,7 @@
       width:100vw;
       height:100vh;
       overflow:scroll;
-      background:linear-gradient(purple,red,blue,violet,greenyellow,orange,green);
+      background:linear-gradient(greenyellow,green);
       margin-top:0px;;
     }
     h1{
@@ -67,13 +67,13 @@
 </body>
 <script>
 let f=1;
-let k=20
-  var di=document.getElementById("di");
+let k=10
+  var joke=document.getElementById("di");
 for(f;f<k;f++){
-  var x=document.createElement('img');
+  let x=document.createElement('img');
   x.setAttribute('class','xo');
   x.src=f+'.jpg';
- di.appendChild(x);
+ joke.appendChild(x);
 }
 </script>
 </html>
