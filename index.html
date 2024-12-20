@@ -85,11 +85,16 @@ for(f;f<k;f++){
   x.src=f+'.jpg';
  joke.appendChild(x);
 }
+
+  
  f=0;
   k=0;
   function ja(c){
     k=k+c;
     for(f;f<k;f++){
+      if(x>230){
+        break;
+      }
   let x=document.createElement('img');
   x.setAttribute('class','xo');
   x.src='h ('+f+').jpg';
